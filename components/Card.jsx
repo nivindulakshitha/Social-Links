@@ -1,4 +1,5 @@
 import { Box } from "@mui/material"
+import LinkButton from "./LinkButton"
 
 const Card = () => {
 	return (
@@ -7,6 +8,10 @@ const Card = () => {
 			<h2 className="profile-name">Jessica Randall</h2>
 			<p className="location">London, United Kingdom</p>
 			<p className="profile-bio">Front-end developer & avid reader</p>
+			<div className="social-media">
+				<LinkButton href="https://github.com/jessicarandall"/>
+				<LinkButton href="https://twitter.com/jessicarandall"/>
+			</div>
 		</Box>
 	)
 }
