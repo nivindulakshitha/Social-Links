@@ -1,15 +1,15 @@
-import { Button } from "@mui/material"
 import PropTypes from 'prop-types';
 
-const LinkButton = ({ href }) => {
-  return (
-	  <Button variant="contained" href="https://www.google.com" target="_blank">
-		  { href }
-	  </Button>
-  )
+const LinkButton = ({ name, href }) => {
+	return (
+		<div className="link-button" href={href} target="_blank">
+			{name}
+		</div>
+	)
 }
 LinkButton.propTypes = {
-  href: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
+	href: PropTypes.string.isRequired,
 };
 
 export default LinkButton
