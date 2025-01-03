@@ -2,9 +2,11 @@ import PropTypes from 'prop-types';
 
 const LinkButton = ({ name, href }) => {
 	return (
-		<div className="link-button" href={href} target="_blank">
-			{name}
-		</div>
+		<a href={href} target="_blank">
+			<div className="link-button">
+				{name}
+			</div>
+		</a>
 	)
 }
 LinkButton.propTypes = {
